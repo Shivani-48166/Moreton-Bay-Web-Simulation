@@ -122,9 +122,20 @@ Add any CSS related this task below this comment
 
 */
 body{
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    min-height: calc(100vh - 373px);
 }
 
 .main-page-form-container{
@@ -156,11 +167,30 @@ form .main-page-form-container .input-box{
     padding-right: 10px;
     margin-right: 10px;
 }
-/*
-#site-header, #site-footer{
-    display: none;
+
+form .form-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
-*/
+
+.form-row .input-box{
+    flex: 1 1 calc(50% - 20px);
+    min-width: 200px;
+}
+
+.input-box label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-box input, .input-box select {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 #submit{
     background-color: #0063b7;
@@ -170,4 +200,10 @@ form .main-page-form-container .input-box{
     width: 100%;
     height: 30px;
     margin-top: 30px;
+}
+
+@media (max-width: 600px){
+    .form-row .input-box{
+        flex: 1 1 100%;
+    }
 }
