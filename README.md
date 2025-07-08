@@ -1,5 +1,5 @@
 # Moreton-Bay-Web-Simulation
-# Save the Bay – Volunteer Registration Website 🌊
+# Save the Bay – Volunteer Registration Website
 
 This is a simple website created as part of the Forage "Moreton Bay Regional Council: Web Development Job Simulation".
 
