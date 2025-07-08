@@ -156,9 +156,11 @@ form .main-page-form-container .input-box{
     padding-right: 10px;
     margin-right: 10px;
 }
+/*
 #site-header, #site-footer{
     display: none;
 }
+*/
 
 #submit{
     background-color: #0063b7;
